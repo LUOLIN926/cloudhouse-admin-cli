@@ -1,4 +1,4 @@
-# CLI 命令参考（0.3.2）
+# CLI 命令参考（0.3.3）
 
 由注册表生成；Agent 指定 `--profile prod --json`。
 

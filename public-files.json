@@ -1,5 +1,5 @@
 {
-  "scope": "reviewed initial independent source; excludes this manifest and .git",
+  "scope": "reviewed independent source; excludes this manifest, dist and .git",
   "files": [
     {
       "path": ".github/workflows/ci.yml",
@@ -11,7 +11,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "538923637bca4b46e868e93003c46218ecf101764c4b634a539a6d988ad170ad"
+      "sha256": "275fbba7159d655685c10ffc4bbf52f6206bebad070006c5fe15bf587cd3e0f5"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -23,7 +23,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "92e75d56480a97185771326a3a940cddfd52377f13dff83509d473a875466ec4"
+      "sha256": "8c7ebc7540fe41803f0aec80ec4b456d69d39608cd1e2f027cb4afe43946d2fb"
     },
     {
       "path": "SECURITY.md",
@@ -39,11 +39,11 @@
     },
     {
       "path": "docs/00-overview.md",
-      "sha256": "00ac64a87dc50c53865a4dcd33c0a5f049746f61c894e9320c6adc7f79c2fdb6"
+      "sha256": "90c76bb4b59797be27224f848559ca051f999a781c2743a4cfc7c98707446580"
     },
     {
       "path": "docs/01-command-reference.md",
-      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+      "sha256": "2c2f328d6bf31569f2b23c6de45fba6319b6907fb2ca08a2821125b53cf4fb67"
     },
     {
       "path": "docs/02-agent-contract.md",
@@ -59,7 +59,7 @@
     },
     {
       "path": "docs/05-release.md",
-      "sha256": "7e448269582133a4c925c66e282d4ed189188fd398a6e6d7c6492d0e4e448906"
+      "sha256": "a2caef8b3f6d78cad3cd58e5291880ae66ad179ef5660eeb5fc6ec0c62d57deb"
     },
     {
       "path": "docs/06-coverage.md",
@@ -68,6 +68,10 @@
     {
       "path": "docs/07-data-analysis.md",
       "sha256": "2fe6398e24938911ceabcf888bac7388629e11b04e2e4930124fc5238c70f451"
+    },
+    {
+      "path": "docs/08-installation.md",
+      "sha256": "9d19171175ca2cd77c0046f5f5763a248c66a3ada735a38fe3ad0227959a80d8"
     },
     {
       "path": "docs/security-review.md",
@@ -79,7 +83,7 @@
     },
     {
       "path": "integrations/codex/.codex-plugin/plugin.json",
-      "sha256": "4796d6c51d3fa368b7d06fa10bb5651719e86f9b1f57d774aac1697c809952d2"
+      "sha256": "cb77d2e347392e12346f8a12a9dba08b9474450929b0000bd349e271911a8304"
     },
     {
       "path": "integrations/codex/LICENSE",
@@ -91,11 +95,11 @@
     },
     {
       "path": "integrations/codex/package.json",
-      "sha256": "17bba5154f04bf75433e9f663eb1f225b639c4158c8dbc5e4022ca2b10e9c48b"
+      "sha256": "d86b6b5872979ce8ae92f51de5da85537a5165436c45615ae94055f1229668c7"
     },
     {
       "path": "integrations/codex/plugin.json",
-      "sha256": "75a29e23ab6dff547d8aec776f4d9410fb7eb127ce317439c1b22f70cd17b0de"
+      "sha256": "f59c30ff36801721210f4aca08d9a2bb6f217df91022af6942cf3a769ed1d50f"
     },
     {
       "path": "integrations/codex/skills/cloudhouse-admin/SKILL.md",
@@ -103,7 +107,7 @@
     },
     {
       "path": "integrations/codex/skills/cloudhouse-admin/references/01-command-reference.md",
-      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+      "sha256": "2c2f328d6bf31569f2b23c6de45fba6319b6907fb2ca08a2821125b53cf4fb67"
     },
     {
       "path": "integrations/codex/skills/cloudhouse-admin/references/02-agent-contract.md",
@@ -123,7 +127,7 @@
     },
     {
       "path": "integrations/dsh/package.json",
-      "sha256": "b609eead39e0f9178df7c298686561155c8234fb02385cecab3650b0818a80cb"
+      "sha256": "ad643e897df235b49528d29bc8bcf6eb6ca66711882ce7bb20800c165d7addda"
     },
     {
       "path": "integrations/dsh/skills/cloudhouse-admin/SKILL.md",
@@ -131,7 +135,7 @@
     },
     {
       "path": "integrations/dsh/skills/cloudhouse-admin/references/01-command-reference.md",
-      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+      "sha256": "2c2f328d6bf31569f2b23c6de45fba6319b6907fb2ca08a2821125b53cf4fb67"
     },
     {
       "path": "integrations/dsh/skills/cloudhouse-admin/references/02-agent-contract.md",
@@ -147,7 +151,7 @@
     },
     {
       "path": "integrations/openclaw/package.json",
-      "sha256": "a50f009065e8222b20934c101f57059cc7314d8040ecbf64bda2e680944b08b5"
+      "sha256": "20b58309df1aa871b6dab5a8ef5ed5ce814057a45a06f084fd45177d199532c6"
     },
     {
       "path": "integrations/openclaw/skills/cloudhouse-admin/SKILL.md",
@@ -155,7 +159,7 @@
     },
     {
       "path": "integrations/openclaw/skills/cloudhouse-admin/references/01-command-reference.md",
-      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+      "sha256": "2c2f328d6bf31569f2b23c6de45fba6319b6907fb2ca08a2821125b53cf4fb67"
     },
     {
       "path": "integrations/openclaw/skills/cloudhouse-admin/references/02-agent-contract.md",
@@ -171,7 +175,7 @@
     },
     {
       "path": "integrations/opencode/package.json",
-      "sha256": "3e6e615277273e476b6ac2994a8123cd1a207f64500c156745b3ca527255500b"
+      "sha256": "c0a96f9022dcb692457b990e15e40578f8ffd82638f7e3934aec06a410db7548"
     },
     {
       "path": "integrations/opencode/skills/cloudhouse-admin/SKILL.md",
@@ -179,7 +183,7 @@
     },
     {
       "path": "integrations/opencode/skills/cloudhouse-admin/references/01-command-reference.md",
-      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+      "sha256": "2c2f328d6bf31569f2b23c6de45fba6319b6907fb2ca08a2821125b53cf4fb67"
     },
     {
       "path": "integrations/opencode/skills/cloudhouse-admin/references/02-agent-contract.md",
@@ -195,7 +199,7 @@
     },
     {
       "path": "integrations/pi/package.json",
-      "sha256": "5d99f224036254799ce434fed627873b113af4278c1b37c26d8570b2c2f0032a"
+      "sha256": "14c28aa9a8a5bcc42153070817d57ad5374c03976640db71b1823baab833e218"
     },
     {
       "path": "integrations/pi/skills/cloudhouse-admin/SKILL.md",
@@ -203,7 +207,7 @@
     },
     {
       "path": "integrations/pi/skills/cloudhouse-admin/references/01-command-reference.md",
-      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+      "sha256": "2c2f328d6bf31569f2b23c6de45fba6319b6907fb2ca08a2821125b53cf4fb67"
     },
     {
       "path": "integrations/pi/skills/cloudhouse-admin/references/02-agent-contract.md",
@@ -211,7 +215,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "06ce19ba2eb05fceee00e5e8ff5126527da50301db28d14ea97150946cbd45b8"
+      "sha256": "85284e80a020fbbc7fbd13c1990d07d4ba708166175f404993129f4c9fc196c1"
     },
     {
       "path": "scripts/build-release.mjs",
@@ -235,7 +239,7 @@
     },
     {
       "path": "skills/cloudhouse-admin/references/01-command-reference.md",
-      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+      "sha256": "2c2f328d6bf31569f2b23c6de45fba6319b6907fb2ca08a2821125b53cf4fb67"
     },
     {
       "path": "skills/cloudhouse-admin/references/02-agent-contract.md",
@@ -407,7 +411,7 @@
     },
     {
       "path": "src/version.mjs",
-      "sha256": "efa3cfce8e6b4f0b956ac25d5d29f8d9279ca4d57d97e2827245d14fc718c227"
+      "sha256": "02290e003dc095d629e955af4ee5f50e4334a389caf7983aa5c27c7710b65fa2"
     },
     {
       "path": "test/accounts-applies.test.mjs",
@@ -443,7 +447,7 @@
     },
     {
       "path": "test/extended.test.mjs",
-      "sha256": "153b7b2f781bd51b5cb4b21c2ea82a6cfd059f0bb46d64e94ef0ebafd49c3ef3"
+      "sha256": "bc018b7d0af09a5dc0be8f05f49f9d37730b4fd6feff08b18733cad652d00e0b"
     },
     {
       "path": "test/flags.test.mjs",

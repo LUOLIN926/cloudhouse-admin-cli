@@ -1,9 +1,9 @@
 {
   "name": "cloudhouse-admin-cli",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "CloudHouse 招新管理后台命令行工具（Agent 优先，JSON 输出）",
   "type": "module",
-  "private": true,
+  "private": false,
   "bin": {
     "ch": "./bin/ch.mjs"
   },
@@ -36,5 +36,9 @@
   "homepage": "https://dayunwu.cn/cli/",
   "bugs": {
     "url": "https://github.com/LUOLIN926/cloudhouse-admin-cli/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

@@ -87,7 +87,7 @@ test('五类agent安装：隔离目录、可更新、保留无关配置、不含
   assert.equal(fs.readFileSync(path.join(dir,'unrelated.json'),'utf8'),'keep')
 })
 test('版本与能力离线可读，能力按动作声明幂等且标注后端要求',async()=>{
-  const r=await runCli(['--version'],{env:{CH_CONFIG_DIR:'/does-not-exist'}});assert.equal(JSON.parse(r.stdout).data.version,'0.3.2')
+  const r=await runCli(['--version'],{env:{CH_CONFIG_DIR:'/does-not-exist'}});assert.equal(JSON.parse(r.stdout).data.version,'0.3.3')
   const caps=JSON.parse((await runCli(['capabilities'],{env:{CH_CONFIG_DIR:'/does-not-exist'}})).stdout).data
   const papers=caps.commands.find(s=>s.name==='ai papers');assert.ok(papers.backendRequirement);assert.equal(papers.actions.find(s=>s.name==='get-generation').requestId,false)
   assert.equal(caps.commands.find(s=>s.name==='ai materials').requestId,false)

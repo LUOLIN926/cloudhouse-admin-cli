@@ -6,16 +6,20 @@
 
 ## 安装
 
-从 [v0.3.2 Release](https://github.com/LUOLIN926/cloudhouse-admin-cli/releases/tag/v0.3.2) 下载 `.tgz`，核对 SHA256SUMS 后安装：
+推荐：`npm install -g cloudhouse-admin-cli@latest`。手动安装和 Agent 提示词见 [安装指南](docs/08-installation.md)。
+
+备用渠道：
+
+从 [v0.3.3 Release](https://github.com/LUOLIN926/cloudhouse-admin-cli/releases/tag/v0.3.3) 下载 `.tgz`，核对 SHA256SUMS 后安装：
 
 ```sh
-npm install -g ./cloudhouse-admin-cli-0.3.2.tgz
+npm install -g ./cloudhouse-admin-cli-0.3.3.tgz
 ch --version
 ch help
 ch capabilities
 ```
 
-便携 ZIP 解压后通过 `node cloudhouse-admin-cli/bin/ch.mjs --version` 运行。未发布公共 npm 注册表；请勿将同名第三方包视为官方包。Windows 可用 PowerShell `Get-FileHash` 核对 SHA-256；macOS 可用 `shasum -a 256`，Linux 可用 `sha256sum`。
+便携 ZIP 解压后通过 `node cloudhouse-admin-cli/bin/ch.mjs --version` 运行。官方 npm 包：cloudhouse-admin-cli；推荐通过 npm 安装。Windows 可用 PowerShell `Get-FileHash` 核对 SHA-256；macOS 可用 `shasum -a 256`，Linux 可用 `sha256sum`。
 
 ## 登录与使用
 

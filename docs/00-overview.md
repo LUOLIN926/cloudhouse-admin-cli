@@ -1,13 +1,13 @@
 # 管理后台 CLI（ch）总览
 
-版本 **0.3.2**，Node.js ≥18，纯 ESM、零运行时依赖。共 98 条命令注册项（AI 多动作命令另列动作），面向管理员与 agent。
+版本 **0.3.3**，Node.js ≥18，纯 ESM、零运行时依赖。共 98 条命令注册项（AI 多动作命令另列动作），面向管理员与 agent。
 
 ## 安装与快速开始
 
 从 https://dayunwu.cn/cli/ 下载 .tgz 或便携 ZIP。
 
 ```bash
-npm install -g ./cloudhouse-admin-cli-0.3.2.tgz
+npm install -g ./cloudhouse-admin-cli-0.3.3.tgz
 ch --version
 ch capabilities --json
 # 输入已有管理员凭据；不要将密码粘贴到 shell 历史
