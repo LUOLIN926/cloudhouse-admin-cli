@@ -1,0 +1,7 @@
+{
+  "name": "cloudhouse-admin-opencode",
+  "version": "0.3.2",
+  "type": "module",
+  "private": true,
+  "license": "MIT"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "cloudhouse-admin-cli",
+  "version": "0.3.2",
+  "description": "CloudHouse 招新管理后台命令行工具（Agent 优先，JSON 输出）",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "ch": "./bin/ch.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check:security": "node scripts/check-security.mjs",
+    "docs": "node scripts/update-docs.mjs",
+    "sync:integrations": "node scripts/sync-integrations.mjs",
+    "build:release": "node scripts/build-release.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "skills",
+    "integrations",
+    "docs",
+    "LICENSE",
+    "SECURITY.md",
+    "THIRD_PARTY_NOTICES.md",
+    "CHANGELOG.md"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LUOLIN926/cloudhouse-admin-cli.git"
+  },
+  "homepage": "https://dayunwu.cn/cli/",
+  "bugs": {
+    "url": "https://github.com/LUOLIN926/cloudhouse-admin-cli/issues"
+  }
+}

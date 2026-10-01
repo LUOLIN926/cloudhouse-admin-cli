@@ -1,0 +1,489 @@
+{
+  "scope": "reviewed initial independent source; excludes this manifest and .git",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "10fa70a10f603277c83b6a8cd2c403294e35bc77c72e916e77890f2356620b1c"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "1218d49909ba9c340500d45fbea9fa5d25b4635a15d665363e579aee10290b5a"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "538923637bca4b46e868e93003c46218ecf101764c4b634a539a6d988ad170ad"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "18667cc58c5cae5fb36092053514395c70eedb695c8b39227a3a42accad5f497"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cb76b5c9bec926cd9fc21e23139363e22b1b92305586ac18e75391b99ab7608b"
+    },
+    {
+      "path": "README.md",
+      "sha256": "92e75d56480a97185771326a3a940cddfd52377f13dff83509d473a875466ec4"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "0b3d07a57c027d2d96d3fbafa1c29239ef654238c17c004aad39f2723ddc866d"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "ca47054c162b01a70bd27c69a2ff0d7cc56eb0317b183067d14048d4a7f15e23"
+    },
+    {
+      "path": "bin/ch.mjs",
+      "sha256": "4a0747e694362293f5116420c9627eab09632219985d57754048b6dc46e439dd"
+    },
+    {
+      "path": "docs/00-overview.md",
+      "sha256": "00ac64a87dc50c53865a4dcd33c0a5f049746f61c894e9320c6adc7f79c2fdb6"
+    },
+    {
+      "path": "docs/01-command-reference.md",
+      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+    },
+    {
+      "path": "docs/02-agent-contract.md",
+      "sha256": "1b12baf8a56812a2d31300db13932e58b7187c6ae68681964bf98dc0f9f49eeb"
+    },
+    {
+      "path": "docs/03-agent-setup.md",
+      "sha256": "52c9c4871b7916f2b84917f8d05cd8acefb6dbd975976a8921ddad76905cc14c"
+    },
+    {
+      "path": "docs/04-audit.md",
+      "sha256": "2a6d1d184008c442fdb445c5b8ea0dba8b292de93177eceeb6079ae1cfa259ad"
+    },
+    {
+      "path": "docs/05-release.md",
+      "sha256": "7e448269582133a4c925c66e282d4ed189188fd398a6e6d7c6492d0e4e448906"
+    },
+    {
+      "path": "docs/06-coverage.md",
+      "sha256": "6277d98c0f0dfdd0ed029e078773a1977401e3040b4058a39defd5f948120bf1"
+    },
+    {
+      "path": "docs/07-data-analysis.md",
+      "sha256": "2fe6398e24938911ceabcf888bac7388629e11b04e2e4930124fc5238c70f451"
+    },
+    {
+      "path": "docs/security-review.md",
+      "sha256": "551404ec7f0aef0948c787e0b95acc15b6eacc074538e6c6caa7e84e4d557a58"
+    },
+    {
+      "path": "integrations/codex/.agents/plugins/marketplace.json",
+      "sha256": "738c73a56aba8c644b68d8266662689f461e4cf2dd396f299ea71fcf5d803bc1"
+    },
+    {
+      "path": "integrations/codex/.codex-plugin/plugin.json",
+      "sha256": "4796d6c51d3fa368b7d06fa10bb5651719e86f9b1f57d774aac1697c809952d2"
+    },
+    {
+      "path": "integrations/codex/LICENSE",
+      "sha256": "cb76b5c9bec926cd9fc21e23139363e22b1b92305586ac18e75391b99ab7608b"
+    },
+    {
+      "path": "integrations/codex/README.md",
+      "sha256": "82f69d19466acec192a2fa88a7884dac6b138cde0f35706c7c9890f75409798a"
+    },
+    {
+      "path": "integrations/codex/package.json",
+      "sha256": "17bba5154f04bf75433e9f663eb1f225b639c4158c8dbc5e4022ca2b10e9c48b"
+    },
+    {
+      "path": "integrations/codex/plugin.json",
+      "sha256": "75a29e23ab6dff547d8aec776f4d9410fb7eb127ce317439c1b22f70cd17b0de"
+    },
+    {
+      "path": "integrations/codex/skills/cloudhouse-admin/SKILL.md",
+      "sha256": "1192d412fbbfedad0274846b8009150b86717782d4df940f3510ecd92337614c"
+    },
+    {
+      "path": "integrations/codex/skills/cloudhouse-admin/references/01-command-reference.md",
+      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+    },
+    {
+      "path": "integrations/codex/skills/cloudhouse-admin/references/02-agent-contract.md",
+      "sha256": "1b12baf8a56812a2d31300db13932e58b7187c6ae68681964bf98dc0f9f49eeb"
+    },
+    {
+      "path": "integrations/dsh/LICENSE",
+      "sha256": "cb76b5c9bec926cd9fc21e23139363e22b1b92305586ac18e75391b99ab7608b"
+    },
+    {
+      "path": "integrations/dsh/README.md",
+      "sha256": "837c255adc6258b171ad49cb38066b1cea13cabfd3d8c076342bfcf6d911eebb"
+    },
+    {
+      "path": "integrations/dsh/index.mjs",
+      "sha256": "d2f86b3f6769c3ffdeca57df866e0150a24a44672b3f1829263450f872e3557f"
+    },
+    {
+      "path": "integrations/dsh/package.json",
+      "sha256": "b609eead39e0f9178df7c298686561155c8234fb02385cecab3650b0818a80cb"
+    },
+    {
+      "path": "integrations/dsh/skills/cloudhouse-admin/SKILL.md",
+      "sha256": "1192d412fbbfedad0274846b8009150b86717782d4df940f3510ecd92337614c"
+    },
+    {
+      "path": "integrations/dsh/skills/cloudhouse-admin/references/01-command-reference.md",
+      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+    },
+    {
+      "path": "integrations/dsh/skills/cloudhouse-admin/references/02-agent-contract.md",
+      "sha256": "1b12baf8a56812a2d31300db13932e58b7187c6ae68681964bf98dc0f9f49eeb"
+    },
+    {
+      "path": "integrations/openclaw/LICENSE",
+      "sha256": "cb76b5c9bec926cd9fc21e23139363e22b1b92305586ac18e75391b99ab7608b"
+    },
+    {
+      "path": "integrations/openclaw/README.md",
+      "sha256": "dbbffac7f9381cf1e7e821e2f64e477e84d47c2b66497cbb08b9397a703168db"
+    },
+    {
+      "path": "integrations/openclaw/package.json",
+      "sha256": "a50f009065e8222b20934c101f57059cc7314d8040ecbf64bda2e680944b08b5"
+    },
+    {
+      "path": "integrations/openclaw/skills/cloudhouse-admin/SKILL.md",
+      "sha256": "1192d412fbbfedad0274846b8009150b86717782d4df940f3510ecd92337614c"
+    },
+    {
+      "path": "integrations/openclaw/skills/cloudhouse-admin/references/01-command-reference.md",
+      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+    },
+    {
+      "path": "integrations/openclaw/skills/cloudhouse-admin/references/02-agent-contract.md",
+      "sha256": "1b12baf8a56812a2d31300db13932e58b7187c6ae68681964bf98dc0f9f49eeb"
+    },
+    {
+      "path": "integrations/opencode/LICENSE",
+      "sha256": "cb76b5c9bec926cd9fc21e23139363e22b1b92305586ac18e75391b99ab7608b"
+    },
+    {
+      "path": "integrations/opencode/README.md",
+      "sha256": "fd061252f9032f0cf2d596d6890e4e968158ba3608e99b1ffcd341e3418b89a1"
+    },
+    {
+      "path": "integrations/opencode/package.json",
+      "sha256": "3e6e615277273e476b6ac2994a8123cd1a207f64500c156745b3ca527255500b"
+    },
+    {
+      "path": "integrations/opencode/skills/cloudhouse-admin/SKILL.md",
+      "sha256": "1192d412fbbfedad0274846b8009150b86717782d4df940f3510ecd92337614c"
+    },
+    {
+      "path": "integrations/opencode/skills/cloudhouse-admin/references/01-command-reference.md",
+      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+    },
+    {
+      "path": "integrations/opencode/skills/cloudhouse-admin/references/02-agent-contract.md",
+      "sha256": "1b12baf8a56812a2d31300db13932e58b7187c6ae68681964bf98dc0f9f49eeb"
+    },
+    {
+      "path": "integrations/pi/LICENSE",
+      "sha256": "cb76b5c9bec926cd9fc21e23139363e22b1b92305586ac18e75391b99ab7608b"
+    },
+    {
+      "path": "integrations/pi/README.md",
+      "sha256": "87f941caa6dfe6d830191462a7842cbbb56656343b80f8aeb9fd8a8f4a262234"
+    },
+    {
+      "path": "integrations/pi/package.json",
+      "sha256": "5d99f224036254799ce434fed627873b113af4278c1b37c26d8570b2c2f0032a"
+    },
+    {
+      "path": "integrations/pi/skills/cloudhouse-admin/SKILL.md",
+      "sha256": "1192d412fbbfedad0274846b8009150b86717782d4df940f3510ecd92337614c"
+    },
+    {
+      "path": "integrations/pi/skills/cloudhouse-admin/references/01-command-reference.md",
+      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+    },
+    {
+      "path": "integrations/pi/skills/cloudhouse-admin/references/02-agent-contract.md",
+      "sha256": "1b12baf8a56812a2d31300db13932e58b7187c6ae68681964bf98dc0f9f49eeb"
+    },
+    {
+      "path": "package.json",
+      "sha256": "06ce19ba2eb05fceee00e5e8ff5126527da50301db28d14ea97150946cbd45b8"
+    },
+    {
+      "path": "scripts/build-release.mjs",
+      "sha256": "6ce3567a7bfa6a7e3932e258ed70f6486965996fcc8fe56fb0e65cae277c10fc"
+    },
+    {
+      "path": "scripts/check-security.mjs",
+      "sha256": "12d576170fb8ce2d046a6848436729b245635f4b1f662b82e2a3c734fcc1c89d"
+    },
+    {
+      "path": "scripts/sync-integrations.mjs",
+      "sha256": "c36faa5dc5ecc6c8b3ea1762165c305d29781810c63f59aca75c1475e8ce494a"
+    },
+    {
+      "path": "scripts/update-docs.mjs",
+      "sha256": "56dcfc6124db4178e925e8fa12fc9da6d6e40d5a4b90768c2eb07e26eebed0f0"
+    },
+    {
+      "path": "skills/cloudhouse-admin/SKILL.md",
+      "sha256": "1192d412fbbfedad0274846b8009150b86717782d4df940f3510ecd92337614c"
+    },
+    {
+      "path": "skills/cloudhouse-admin/references/01-command-reference.md",
+      "sha256": "7d29a028d3823e71737f5bac4dcaa6bc458cb3907ec5ea38cc1ac8ef46bd440f"
+    },
+    {
+      "path": "skills/cloudhouse-admin/references/02-agent-contract.md",
+      "sha256": "1b12baf8a56812a2d31300db13932e58b7187c6ae68681964bf98dc0f9f49eeb"
+    },
+    {
+      "path": "src/agent-install.mjs",
+      "sha256": "60c66810e17807f781d562035093e6c95ba461af77dcc615c58d11db64c60219"
+    },
+    {
+      "path": "src/analysis-resources.json",
+      "sha256": "cf01acf7368556901b6f1faa9c7cdec12d4c967a010061f8c2b8839efc298790"
+    },
+    {
+      "path": "src/argv.mjs",
+      "sha256": "0ab20f0fbb9cfdd72ba41d126e8e3df987c5c476e7b93ac9f75f292b469683b2"
+    },
+    {
+      "path": "src/capabilities.mjs",
+      "sha256": "94039a074146c2c267ecd87ab2d2f989e4b7979805824403a2785ae4bf49b5da"
+    },
+    {
+      "path": "src/cli.mjs",
+      "sha256": "8e42740e11eb095b1a61492ed913bd4b425420d8286fbaf824c1c3e222070478"
+    },
+    {
+      "path": "src/client.mjs",
+      "sha256": "e2b5de76c4b7ed4e136a32cf996c98c3d40e4cf70e2988d5e102a0ef333a8f10"
+    },
+    {
+      "path": "src/commands/accounts.mjs",
+      "sha256": "121ecfc0842ec76c548aa10f90969b37f1a1a8ba3a9d639fa9b087d1706926c4"
+    },
+    {
+      "path": "src/commands/agent.mjs",
+      "sha256": "3dd55daad6f57f07180f7a75be8f3944d7a97b6e15c9a2689ae932b97ae1b3ab"
+    },
+    {
+      "path": "src/commands/ai.mjs",
+      "sha256": "f959ca145e72f92202c4612c19b97c5cf76c8f5b0625b681a896690332559193"
+    },
+    {
+      "path": "src/commands/analysis.mjs",
+      "sha256": "93306be9fca5ad06af8a901ddb02a6d6492f9c64e9337b2b5410abc350427781"
+    },
+    {
+      "path": "src/commands/api.mjs",
+      "sha256": "49f3bec0ec643f4aaea3ee37399b7c5592090cc445ef5935f57aa00111210d91"
+    },
+    {
+      "path": "src/commands/applies.mjs",
+      "sha256": "48a1b101ce9d970a438746fc74ee727e3c9e30ff9933775e76fcc1865d1c9bb6"
+    },
+    {
+      "path": "src/commands/assistant.mjs",
+      "sha256": "7ab2cd4d729717f54a74b6446d0533427463fa0e1a3acc6ad1cc8b996a1e0dc3"
+    },
+    {
+      "path": "src/commands/auth.mjs",
+      "sha256": "efc22e33970ae7de95be9db5cbef4434d1a50605a5f76f1914fdeb57475cda56"
+    },
+    {
+      "path": "src/commands/candidates.mjs",
+      "sha256": "10b6644a6680bcd1963785c18b5c10ecec63e4d52be4cf0b2a15cc8d6daa3ac6"
+    },
+    {
+      "path": "src/commands/checkin.mjs",
+      "sha256": "89afb3b20116ac101e977bb9ea597959965432e1a785d39cd4a34efd19c27f7d"
+    },
+    {
+      "path": "src/commands/dashboard.mjs",
+      "sha256": "75ed5ca0b93b54606edc367de4b9050fb4d0be2fc9c05547f265a7aec4f6b8ff"
+    },
+    {
+      "path": "src/commands/evaluations.mjs",
+      "sha256": "e1bfc6c432c78b87b330cea8b4cd2a893f6abab7e1f25f9d788aa3266a1a7c3d"
+    },
+    {
+      "path": "src/commands/extended.mjs",
+      "sha256": "5109293ad9ac6bacb18c8ce4bdb951e8e4b72bbfbe9e196a433c3ae60b3925a2"
+    },
+    {
+      "path": "src/commands/feishu.mjs",
+      "sha256": "163913f86f5f0e2e1ee53a077036e7725771334cc27afc1a451c02bf29fe5a0b"
+    },
+    {
+      "path": "src/commands/groups.mjs",
+      "sha256": "943fea376cde128419b892fb81ec884ee64207fc5fa9ae09024c1de29a205b20"
+    },
+    {
+      "path": "src/commands/index.mjs",
+      "sha256": "217ffec65c797d55c22ef3cd0ac936c58fba017e6dbfac5ba957d93cccb2a2c0"
+    },
+    {
+      "path": "src/commands/interviews.mjs",
+      "sha256": "19f273c15658e8b9fc48cce7b48d2d0bf3fcd5c7ddbf1686a151fc78775a3b48"
+    },
+    {
+      "path": "src/commands/load.mjs",
+      "sha256": "5cce5a16e6a12a434d96efa4cde4aa22f34aa9cfb9e28e42a173a28335a9572e"
+    },
+    {
+      "path": "src/commands/notifications.mjs",
+      "sha256": "dee25e374c571537befddfb0dc94d14168038ddc53811e1d51dce7fd4b7e082e"
+    },
+    {
+      "path": "src/commands/plans.mjs",
+      "sha256": "d15e0d048af0222ed42748c83c6d6ff0f1970f9cadd153beca41c923fb6851ab"
+    },
+    {
+      "path": "src/commands/profile.mjs",
+      "sha256": "3fe5328c66f82bc54b81c8f6d4e056b2c390c9543f07ea268796c8e1a629e280"
+    },
+    {
+      "path": "src/commands/slots.mjs",
+      "sha256": "fc196e9c18de38f9ea45809123deae26f3c4dad7c3fa2338e34f3c615b0a1233"
+    },
+    {
+      "path": "src/commands/uploads.mjs",
+      "sha256": "9fa4664bb6039abe6c9a7dc6ada7d078b4afdcd2c0938baa6d03f8da87d4a1d8"
+    },
+    {
+      "path": "src/config.mjs",
+      "sha256": "699eef1c00c0ebb9e02ded64de63a28aeb7af987d1a853bd8ad7a781005d6fea"
+    },
+    {
+      "path": "src/errors.mjs",
+      "sha256": "0e04cd2e276fc1a8ff84d9dc1b2d75c00c66f2e34d66d13cee9cc0f5cd906494"
+    },
+    {
+      "path": "src/flags.mjs",
+      "sha256": "1f823b86759eb46de4f9e82023f79f4b2430595f71788ce326727638c6ee599b"
+    },
+    {
+      "path": "src/idempotent.mjs",
+      "sha256": "8d1a8973f63d45b5d6d0a446abfc4e429ad76a8807c1e973f5fd3c78eb09aae7"
+    },
+    {
+      "path": "src/output.mjs",
+      "sha256": "151bffd30da509e36ff2a709e54b0285744b7b6e409198d6d62314f0dcb9bfea"
+    },
+    {
+      "path": "src/path.mjs",
+      "sha256": "0e81662e9ac3978f035f4abe524a48e6d82c570513c79dc18de00333e0a482bf"
+    },
+    {
+      "path": "src/payload.mjs",
+      "sha256": "da0dc7e0332d3445cb662bec70736d388d633528c34177b73c163e9c2ab7b085"
+    },
+    {
+      "path": "src/prompt.mjs",
+      "sha256": "6582fc8f9220c02fd94249c88c2532ac2edaf00faab4f8bf5b91b6d94ed70b74"
+    },
+    {
+      "path": "src/query.mjs",
+      "sha256": "3cf8807ccd6603dce7089455c4e51de9f2c6dfa000a5d9aaeb44c90d23bdce9f"
+    },
+    {
+      "path": "src/sensitive.mjs",
+      "sha256": "a1cdb539bd6b6b45be710ba65abf6e8c1d2c468c4739f43608fec0601dc3b085"
+    },
+    {
+      "path": "src/session.mjs",
+      "sha256": "931baac32737f5d0e172cba2845b67d11cc06a56e58942cbd19746ac60caae4d"
+    },
+    {
+      "path": "src/time.mjs",
+      "sha256": "73c97632a270ee9f5cbeedebc1af1538cc26746f662becc28efb481f2cb172b4"
+    },
+    {
+      "path": "src/version.mjs",
+      "sha256": "efa3cfce8e6b4f0b956ac25d5d29f8d9279ca4d57d97e2827245d14fc718c227"
+    },
+    {
+      "path": "test/accounts-applies.test.mjs",
+      "sha256": "0b6471f0f53f2d59b1774c1507de5aadceec053b8a4deec8fe6fe3c2e4f96358"
+    },
+    {
+      "path": "test/ai-coding.test.mjs",
+      "sha256": "02c9e2fba8ad20c5212eebce51835fbc03eee080fb21ed4de220affe22c29719"
+    },
+    {
+      "path": "test/analysis.test.mjs",
+      "sha256": "d51414e3cb2f879ed06ba81237d9ef5f0528dee68974b5e4ed9689951214619a"
+    },
+    {
+      "path": "test/cli-run.test.mjs",
+      "sha256": "002c3d28213b80cc6aa8d41e23407edfaa4e48147c5c13dfcb7be24df35cc2c3"
+    },
+    {
+      "path": "test/config.test.mjs",
+      "sha256": "28d2da1a885c20344486e82e7d7ebd4878939608832a714da41c2e7d2df499b4"
+    },
+    {
+      "path": "test/contract.test.mjs",
+      "sha256": "dfa6025ff9bf162ecaf2fb00ba3930932986a07810d2927f2640d133d0bb3a61"
+    },
+    {
+      "path": "test/docs.test.mjs",
+      "sha256": "ac832e774d3346203d288a31dbfeee7dfe0d79b85e619b3dd88be0c4e4572b23"
+    },
+    {
+      "path": "test/exit-codes.test.mjs",
+      "sha256": "51d6f1e865a5af44b1a7027330adfa7bfebd077fa6c2cd32f65da0ad273d42aa"
+    },
+    {
+      "path": "test/extended.test.mjs",
+      "sha256": "153b7b2f781bd51b5cb4b21c2ea82a6cfd059f0bb46d64e94ef0ebafd49c3ef3"
+    },
+    {
+      "path": "test/flags.test.mjs",
+      "sha256": "e37908d080b694d9ff316e24e4fce7c5c07bdd9ed21b36d0e7ecdd9d259cd146"
+    },
+    {
+      "path": "test/output-time-idempotent.test.mjs",
+      "sha256": "c68233a70054cdb4e5091e5d7871d3bfb13ab83f7979e2004f5161d06f5a2557"
+    },
+    {
+      "path": "test/prompt-secret.test.mjs",
+      "sha256": "bcfbbebfffafee149dd3dbcf3c20a41fa20dacbacf27f510507d6ba9a2ee3124"
+    },
+    {
+      "path": "test/reads.test.mjs",
+      "sha256": "8fec079a9fffd35e34aa26b402b5e7bc3a953a29e32dbdf0c229e9129111a805"
+    },
+    {
+      "path": "test/renewal-checkin.test.mjs",
+      "sha256": "9c2b687021353e50f5034e069d7fc87d9b1ae7aea79e0e2020c80bea9667028e"
+    },
+    {
+      "path": "test/security-writes.test.mjs",
+      "sha256": "3b3070d2a027d47712e1d6082d938e314062fe4d30f34386478bb6b323f8d572"
+    },
+    {
+      "path": "test/session.test.mjs",
+      "sha256": "d92a490af0d3c98b9ed3f176f47330ea31b27137386a563dfc614adb7a298c28"
+    },
+    {
+      "path": "test/writes.test.mjs",
+      "sha256": "d15e237f84b3154568d33606f5017f644ebc05aa0f6592baa668136042146482"
+    },
+    {
+      "path": "test-support/api-contract.json",
+      "sha256": "4dc84e066e5fba496e89c9fb183bfccfe03c620a4d0ebfec96f1a3e4c08d158c"
+    },
+    {
+      "path": "test-support/mock-server.mjs",
+      "sha256": "47c50c30eace3123042048b307e35c8c89ed7eaf53f2abc4c0e1c3bae52988c0"
+    }
+  ]
+}

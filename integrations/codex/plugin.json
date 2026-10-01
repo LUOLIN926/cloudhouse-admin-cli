@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "cloudhouse-admin",
+  "version": "0.3.2",
+  "description": "CloudHouse 管理后台 CLI 原生技能",
+  "extensions": {
+    "com.openai": {
+      "skills": "./skills/"
+    }
+  }
+}

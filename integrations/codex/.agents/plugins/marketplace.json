@@ -1,0 +1,20 @@
+{
+  "name": "cloudhouse-admin-local",
+  "interface": {
+    "displayName": "CloudHouse Admin"
+  },
+  "plugins": [
+    {
+      "name": "cloudhouse-admin",
+      "category": "Productivity",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      }
+    }
+  ]
+}

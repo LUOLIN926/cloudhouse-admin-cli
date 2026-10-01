@@ -1,0 +1,1207 @@
+[
+  {
+    "name": "users",
+    "table": "user",
+    "key": "id",
+    "columns": [
+      "id",
+      "student_no",
+      "role",
+      "is_initial",
+      "admin_level",
+      "status",
+      "account_closed_at",
+      "account_closed_reason",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [
+      "password",
+      "token_version"
+    ],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "role": "integer",
+      "admin_level": "string",
+      "status": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "groups",
+    "table": "group",
+    "key": "id",
+    "columns": [
+      "id",
+      "group_name",
+      "introduction",
+      "requirement",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "admin-groups",
+    "table": "admin_authorized_group",
+    "key": "id",
+    "columns": [
+      "id",
+      "admin_user_id",
+      "group_id",
+      "create_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "admin_user_id": "integer",
+      "group_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "profiles",
+    "table": "user_info",
+    "key": "id",
+    "columns": [
+      "id",
+      "user_id",
+      "direction",
+      "grade",
+      "real_name",
+      "group_id",
+      "college",
+      "major",
+      "class_name",
+      "qq",
+      "phone",
+      "introduction",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "user_id": "integer",
+      "group_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "wechat-identities",
+    "table": "user_wechat_identity",
+    "key": "id",
+    "columns": [
+      "id",
+      "user_id",
+      "openid",
+      "unionid",
+      "phone",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "user_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "applications",
+    "table": "application",
+    "key": "id",
+    "columns": [
+      "id",
+      "user_id",
+      "group1_id",
+      "group2_id",
+      "status",
+      "cancelled_at",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "user_id": "integer",
+      "status": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "interview-group-choice",
+    "table": "interview_group_choice",
+    "key": "id",
+    "columns": [
+      "id",
+      "user_id",
+      "group_id",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "user_id": "integer",
+      "group_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "plans",
+    "table": "interview_plan",
+    "key": "id",
+    "columns": [
+      "id",
+      "round",
+      "scope_group_id",
+      "assessment_content",
+      "assessment_image_url",
+      "assessment_file_url",
+      "assessment_file_name",
+      "pass_text_content",
+      "pass_image_url",
+      "fail_text_content",
+      "fail_image_url",
+      "booking_start_time",
+      "booking_end_time",
+      "status",
+      "publish_mode",
+      "publish_time",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "round": "integer",
+      "scope_group_id": "integer",
+      "status": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "slots",
+    "table": "interview_slot",
+    "key": "id",
+    "columns": [
+      "id",
+      "plan_id",
+      "slot_time",
+      "location",
+      "capacity",
+      "booked_count",
+      "status",
+      "booking_start_time",
+      "booking_end_time",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [
+      "checkin_code"
+    ],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "plan_id": "integer",
+      "status": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "interviews",
+    "table": "interview",
+    "key": "id",
+    "columns": [
+      "id",
+      "user_id",
+      "round",
+      "scope_group_id",
+      "slot_id",
+      "result",
+      "remark",
+      "no_show_reschedule_count",
+      "cancelled_at",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "user_id": "integer",
+      "round": "integer",
+      "scope_group_id": "integer",
+      "slot_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "third-round-entry-confirmation",
+    "table": "third_round_entry_confirmation",
+    "key": "id",
+    "columns": [
+      "id",
+      "user_id",
+      "entry_confirmed_at",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "user_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "third-round-choice",
+    "table": "third_round_choice",
+    "key": "id",
+    "columns": [
+      "id",
+      "user_id",
+      "group_id",
+      "source",
+      "operator_id",
+      "version",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "user_id": "integer",
+      "group_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "third-round-choice-audit",
+    "table": "third_round_choice_audit",
+    "key": "id",
+    "columns": [
+      "id",
+      "user_id",
+      "action",
+      "source",
+      "operator_id",
+      "old_group_id",
+      "new_group_id",
+      "version",
+      "reason",
+      "create_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "user_id": "integer",
+      "action": "string"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "interview-reschedule-audit",
+    "table": "interview_reschedule_audit",
+    "key": "id",
+    "columns": [
+      "id",
+      "interview_id",
+      "candidate_user_id",
+      "old_slot_id",
+      "new_slot_id",
+      "reschedule_mode",
+      "create_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "interview_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "evaluations",
+    "table": "interview_evaluation",
+    "key": "id",
+    "columns": [
+      "id",
+      "interview_id",
+      "user_id",
+      "interviewer_admin_id",
+      "interviewer_name",
+      "interviewer_group_name",
+      "round",
+      "scope_group_id",
+      "content",
+      "score",
+      "result",
+      "starred",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "interview_id": "integer",
+      "user_id": "integer",
+      "round": "integer",
+      "scope_group_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "notifications",
+    "table": "interview_notification",
+    "key": "id",
+    "columns": [
+      "id",
+      "title",
+      "content",
+      "notice_level",
+      "scope_type",
+      "target_round",
+      "target_group_id",
+      "target_slot_id",
+      "status",
+      "start_time",
+      "end_time",
+      "creator_admin_id",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "status": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "admin-audit-log",
+    "table": "admin_audit_log",
+    "key": "id",
+    "columns": [
+      "id",
+      "action",
+      "admin_id",
+      "target_user_id",
+      "reason",
+      "result",
+      "create_time"
+    ],
+    "excluded": [
+      "old_openid_hash"
+    ],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "action": "string",
+      "target_user_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "admin-interview-change-audit",
+    "table": "admin_interview_change_audit",
+    "key": "id",
+    "columns": [
+      "id",
+      "resource_type",
+      "resource_id",
+      "action",
+      "actor_id",
+      "actor_account_snapshot",
+      "actor_admin_level",
+      "source_ip",
+      "user_agent",
+      "request_id",
+      "attribution_status",
+      "inferred_actor_id",
+      "inferred_actor_account",
+      "inference_confidence",
+      "before_state",
+      "after_state",
+      "evidence_detail",
+      "occurred_at",
+      "create_time"
+    ],
+    "excluded": [],
+    "json": {
+      "before_state": "business",
+      "after_state": "business",
+      "evidence_detail": "business"
+    },
+    "filters": {
+      "id": "integer",
+      "action": "string",
+      "actor_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "privacy-consent",
+    "table": "privacy_consent",
+    "key": "id",
+    "columns": [
+      "id",
+      "user_id",
+      "policy_version",
+      "consent_type",
+      "source",
+      "consented_at",
+      "withdrawn_at",
+      "create_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "user_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "user-account-action-log",
+    "table": "user_account_action_log",
+    "key": "id",
+    "columns": [
+      "id",
+      "user_id",
+      "action",
+      "create_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "user_id": "integer",
+      "action": "string"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "admin-applications",
+    "table": "admin_apply_record",
+    "key": "id",
+    "columns": [
+      "id",
+      "student_no",
+      "real_name",
+      "apply_group_id",
+      "position_code",
+      "target_level",
+      "status",
+      "reject_reason",
+      "approved_by",
+      "rejected_by",
+      "approve_time",
+      "reject_time",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "status": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "interview-attendance",
+    "table": "interview_attendance",
+    "key": "id",
+    "columns": [
+      "id",
+      "interview_id",
+      "status",
+      "checked_in_at",
+      "source",
+      "operator_user_id",
+      "version",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "interview_id": "integer",
+      "status": "string"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "interview-attendance-event",
+    "table": "interview_attendance_event",
+    "key": "id",
+    "columns": [
+      "id",
+      "attendance_id",
+      "interview_id",
+      "event_type",
+      "status",
+      "source",
+      "operator_user_id",
+      "detail_json",
+      "create_time"
+    ],
+    "excluded": [],
+    "json": {
+      "detail_json": "business"
+    },
+    "filters": {
+      "id": "integer",
+      "interview_id": "integer",
+      "status": "string"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "feishu-slot-assignment",
+    "table": "feishu_slot_assignment",
+    "key": "id",
+    "columns": [
+      "id",
+      "slot_id",
+      "base_record_id",
+      "sync_status",
+      "interviewer_open_ids_json",
+      "snapshot_json",
+      "last_synced_at",
+      "last_error",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {
+      "interviewer_open_ids_json": "business",
+      "snapshot_json": "business"
+    },
+    "filters": {
+      "id": "integer",
+      "slot_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "feishu-group-leader",
+    "table": "feishu_group_leader",
+    "key": "id",
+    "columns": [
+      "id",
+      "group_id",
+      "base_record_id",
+      "sync_status",
+      "leader_open_ids_json",
+      "snapshot_json",
+      "last_synced_at",
+      "last_error",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {
+      "leader_open_ids_json": "business",
+      "snapshot_json": "business"
+    },
+    "filters": {
+      "id": "integer",
+      "group_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "feishu-delivery-outbox",
+    "table": "feishu_delivery_outbox",
+    "key": "id",
+    "columns": [
+      "id",
+      "message_type",
+      "aggregate_type",
+      "aggregate_id",
+      "recipient_open_id",
+      "payload_json",
+      "status",
+      "attempt_count",
+      "next_attempt_at",
+      "feishu_message_id",
+      "last_error",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [
+      "dedup_key"
+    ],
+    "json": {
+      "payload_json": "business"
+    },
+    "filters": {
+      "id": "integer",
+      "status": "string"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "feishu-slot-import",
+    "table": "feishu_slot_import",
+    "key": "id",
+    "columns": [
+      "id",
+      "base_record_id",
+      "slot_id",
+      "status",
+      "payload_json",
+      "last_error",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [],
+    "json": {
+      "payload_json": "business"
+    },
+    "filters": {
+      "id": "integer",
+      "slot_id": "integer",
+      "status": "string"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "feishu-sync-conflict",
+    "table": "feishu_sync_conflict",
+    "key": "id",
+    "columns": [
+      "id",
+      "slot_id",
+      "base_record_id",
+      "changed_fields",
+      "feishu_snapshot_json",
+      "backend_snapshot_json",
+      "resolution",
+      "detail",
+      "create_time"
+    ],
+    "excluded": [],
+    "json": {
+      "feishu_snapshot_json": "business",
+      "backend_snapshot_json": "business"
+    },
+    "filters": {
+      "id": "integer",
+      "slot_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "checkin-screen-session",
+    "table": "checkin_screen_session",
+    "key": "id",
+    "columns": [
+      "id",
+      "issuer_user_id",
+      "expires_at",
+      "revoked_at",
+      "create_time",
+      "update_time"
+    ],
+    "excluded": [
+      "token_hash"
+    ],
+    "json": {},
+    "filters": {
+      "id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-plan",
+    "table": "ai_coding_plan",
+    "key": "id",
+    "columns": [
+      "id",
+      "name",
+      "status",
+      "current_revision",
+      "config_json",
+      "opens_at",
+      "closes_at",
+      "publish_at",
+      "starts_paused",
+      "created_by",
+      "version",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [],
+    "json": {
+      "config_json": "config"
+    },
+    "filters": {
+      "id": "integer",
+      "status": "string"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-plan-revision",
+    "table": "ai_coding_plan_revision",
+    "key": "id",
+    "columns": [
+      "id",
+      "plan_id",
+      "revision",
+      "config_json",
+      "content_hash",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [],
+    "json": {
+      "config_json": "config"
+    },
+    "filters": {
+      "id": "integer",
+      "plan_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-group-binding",
+    "table": "ai_coding_group_binding",
+    "key": "id",
+    "columns": [
+      "id",
+      "group_id",
+      "plan_id",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "group_id": "integer",
+      "plan_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-model",
+    "table": "ai_coding_model",
+    "key": "id",
+    "columns": [
+      "id",
+      "plan_id",
+      "model_key",
+      "key_version",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [
+      "encrypted_api_key"
+    ],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "plan_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-assignment",
+    "table": "ai_coding_assignment",
+    "key": "id",
+    "columns": [
+      "id",
+      "user_id",
+      "plan_id",
+      "group_id",
+      "active_attempt_id",
+      "generation",
+      "exemption_reason",
+      "exempted_at",
+      "version",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "user_id": "integer",
+      "plan_id": "integer",
+      "group_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-attempt",
+    "table": "ai_coding_attempt",
+    "key": "id",
+    "columns": [
+      "id",
+      "assignment_id",
+      "group_id",
+      "attempt_no",
+      "coding_seconds",
+      "reflection_seconds",
+      "generation_seconds",
+      "plan_revision",
+      "paper_id",
+      "state",
+      "started_at",
+      "stage_started_at",
+      "stage_deadline_at",
+      "survey_ended_at",
+      "coding_started_at",
+      "coding_ended_at",
+      "reflection_started_at",
+      "ended_at",
+      "submit_mode",
+      "effective_publish_at",
+      "void_reason",
+      "version",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "assignment_id": "integer",
+      "group_id": "integer",
+      "state": "string"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-stage-answer",
+    "table": "ai_coding_stage_answer",
+    "key": "id",
+    "columns": [
+      "id",
+      "attempt_id",
+      "stage",
+      "answers_json",
+      "repository_url",
+      "first_prompt",
+      "missing_fields_json",
+      "saved_at",
+      "ended_at",
+      "end_mode",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [],
+    "json": {
+      "answers_json": "answers",
+      "missing_fields_json": "business"
+    },
+    "filters": {
+      "id": "integer",
+      "attempt_id": "integer",
+      "stage": "string"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-grade",
+    "table": "ai_coding_grade",
+    "key": "id",
+    "columns": [
+      "id",
+      "attempt_id",
+      "score",
+      "public_comment",
+      "internal_comment",
+      "grader_id",
+      "grader_name",
+      "graded_at",
+      "revision",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "attempt_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-grade-history",
+    "table": "ai_coding_grade_history",
+    "key": "id",
+    "columns": [
+      "id",
+      "attempt_id",
+      "revision",
+      "score",
+      "public_comment",
+      "internal_comment",
+      "grader_id",
+      "grader_name",
+      "reason",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "attempt_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-retake-grant",
+    "table": "ai_coding_retake_grant",
+    "key": "id",
+    "columns": [
+      "id",
+      "assignment_id",
+      "generation",
+      "opens_at",
+      "closes_at",
+      "reason",
+      "operator_id",
+      "consumed_at",
+      "revoked_at",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "assignment_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-access-code",
+    "table": "ai_coding_access_code",
+    "key": "id",
+    "columns": [
+      "id",
+      "user_id",
+      "plan_id",
+      "group_id",
+      "assignment_generation",
+      "expires_at",
+      "consumed_at",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [
+      "token_version",
+      "code_hash"
+    ],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "user_id": "integer",
+      "plan_id": "integer",
+      "group_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-session",
+    "table": "ai_coding_session",
+    "key": "id",
+    "columns": [
+      "id",
+      "user_id",
+      "plan_id",
+      "assignment_generation",
+      "expires_at",
+      "revoked_at",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [
+      "token_version",
+      "token_hash"
+    ],
+    "json": {},
+    "filters": {
+      "id": "integer",
+      "user_id": "integer",
+      "plan_id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-audit",
+    "table": "ai_coding_audit",
+    "key": "id",
+    "columns": [
+      "id",
+      "actor_id",
+      "target_user_id",
+      "plan_id",
+      "attempt_id",
+      "action",
+      "detail_json",
+      "reason",
+      "request_id",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [],
+    "json": {
+      "detail_json": "business"
+    },
+    "filters": {
+      "id": "integer",
+      "actor_id": "integer",
+      "target_user_id": "integer",
+      "plan_id": "integer",
+      "attempt_id": "integer",
+      "action": "string"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-request-dedup",
+    "table": "ai_coding_request_dedup",
+    "key": "id",
+    "columns": [
+      "id",
+      "actor_scope",
+      "request_id",
+      "operation",
+      "resource_id",
+      "expires_at",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [
+      "body_hash"
+    ],
+    "json": {},
+    "filters": {
+      "id": "integer"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-reflection-generation",
+    "table": "ai_coding_reflection_generation",
+    "key": "attempt_id",
+    "columns": [
+      "attempt_id",
+      "status",
+      "prompt_version",
+      "questionnaire_json",
+      "questionnaire_hash",
+      "review_json",
+      "evidence_json",
+      "metrics_json",
+      "source",
+      "failure_reason",
+      "coding_ended_at",
+      "deadline_at",
+      "ready_at",
+      "lease_until",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [
+      "lease_token"
+    ],
+    "json": {
+      "questionnaire_json": "business",
+      "review_json": "business",
+      "evidence_json": "business",
+      "metrics_json": "business"
+    },
+    "filters": {
+      "attempt_id": "integer",
+      "status": "string"
+    },
+    "backendRequirement": "v36-analysis"
+  },
+  {
+    "name": "ai-coding-paper-generation",
+    "table": "ai_coding_paper_generation",
+    "key": "id",
+    "columns": [
+      "id",
+      "plan_id",
+      "paper_id",
+      "source_hash",
+      "prompt_version",
+      "model",
+      "status",
+      "materials_json",
+      "result_json",
+      "metrics_json",
+      "failure_reason",
+      "confirmed_hash",
+      "confirmed_by",
+      "confirmed_at",
+      "created_by",
+      "deadline_at",
+      "lease_until",
+      "created_at",
+      "updated_at"
+    ],
+    "excluded": [
+      "lease_token"
+    ],
+    "json": {
+      "materials_json": "business",
+      "result_json": "business",
+      "metrics_json": "business"
+    },
+    "filters": {
+      "id": "integer",
+      "plan_id": "integer",
+      "status": "string"
+    },
+    "backendRequirement": "unreleased-material-authoring"
+  },
+  {
+    "name": "analysis-permissions",
+    "table": "admin_data_analysis_permission",
+    "key": "user_id",
+    "columns": [
+      "user_id",
+      "enabled",
+      "version",
+      "updated_by",
+      "updated_at"
+    ],
+    "excluded": [],
+    "json": {},
+    "filters": {
+      "user_id": "integer",
+      "enabled": "boolean"
+    },
+    "backendRequirement": "v36-analysis"
+  }
+]

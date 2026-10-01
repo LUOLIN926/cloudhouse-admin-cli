@@ -1,0 +1,12 @@
+{
+  "name": "cloudhouse-admin-dsh",
+  "version": "0.3.2",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4"
+  }
+}
