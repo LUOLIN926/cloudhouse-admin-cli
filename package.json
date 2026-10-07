@@ -1,6 +1,6 @@
 {
   "name": "cloudhouse-admin-cli",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "CloudHouse 招新管理后台命令行工具（Agent 优先，JSON 输出）",
   "type": "module",
   "private": false,
@@ -26,7 +26,8 @@
     "LICENSE",
     "SECURITY.md",
     "THIRD_PARTY_NOTICES.md",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "assets"
   ],
   "license": "MIT",
   "repository": {
