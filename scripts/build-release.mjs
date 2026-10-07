@@ -13,7 +13,7 @@ if (pack.filename !== `cloudhouse-admin-cli-${VERSION}.tgz`) throw Error('Unexpe
 const stage = fs.mkdtempSync(path.join(os.tmpdir(), 'ch-oss-release-'))
 try {
   const portable = path.join(stage, 'cloudhouse-admin-cli'); fs.mkdirSync(portable)
-  for (const name of ['bin', 'src', 'skills', 'integrations', 'docs', 'package.json', 'README.md', 'LICENSE', 'SECURITY.md', 'THIRD_PARTY_NOTICES.md', 'CHANGELOG.md']) fs.cpSync(path.join(root, name), path.join(portable, name), { recursive: true })
+  for (const name of ['bin', 'src', 'assets', 'skills', 'integrations', 'docs', 'package.json', 'README.md', 'LICENSE', 'SECURITY.md', 'THIRD_PARTY_NOTICES.md', 'CHANGELOG.md']) fs.cpSync(path.join(root, name), path.join(portable, name), { recursive: true })
   execFileSync('zip', ['-qr', path.join(out, `cloudhouse-admin-cli-${VERSION}.zip`), 'cloudhouse-admin-cli'], { cwd: stage })
   for (const agent of ['codex', 'dsh', 'opencode', 'openclaw', 'pi']) {
     const name = `cloudhouse-admin-${agent}`; fs.cpSync(path.join(root, 'integrations', agent), path.join(stage, name), { recursive: true })

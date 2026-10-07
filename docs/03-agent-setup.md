@@ -67,3 +67,7 @@ OpenCode 接入 ZIP 中 skills/cloudhouse-admin 复制到 .opencode/skills/；Op
 ## 全量只读分析（CLI 0.3.0）
 
 先执行 `ch auth status --profile prod --json`，检查 `data.profile.dataAnalysisEnabled`。开启时使用 `ch analysis resources` 发现字段和实际可用资源，再使用 `ch analysis list/get/export/download --profile prod`。例如：“使用 cloudhouse-admin 导出所有组别的报名记录，分析各轮通过率；保留 JSONL 在我指定的本机路径。”各页不是同一时刻快照，失败导出不能当作完整数据。分析权限不会授权通知、评分或账号管理等写操作。
+
+## Codex 插件品牌与更新（0.3.4）
+
+插件详情使用小程序首页的云屋图标，网站为 https://dayunwu.cn/ 。升级 CLI 后重新运行 `ch agent install codex --scope user`，再按输出运行 marketplace 注册和 plugin add。保留已有启用配置；必要时重新打开插件详情或启动新会话。

@@ -1,5 +1,5 @@
 {
-  "scope": "reviewed independent source; excludes this manifest, dist and .git",
+  "scope": "reviewed independent source; excludes this manifest and .git",
   "files": [
     {
       "path": ".github/workflows/ci.yml",
@@ -11,7 +11,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "275fbba7159d655685c10ffc4bbf52f6206bebad070006c5fe15bf587cd3e0f5"
+      "sha256": "60580c84ebd5d1de37e5f22f611cb7d5441b994e7eccf379e2755e7a022a2658"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -34,6 +34,10 @@
       "sha256": "ca47054c162b01a70bd27c69a2ff0d7cc56eb0317b183067d14048d4a7f15e23"
     },
     {
+      "path": "assets/codex-logo.png",
+      "sha256": "5a288905e9086fb15c1b5d1df6cb36b4080653b22366c6068139d3b1803f1df2"
+    },
+    {
       "path": "bin/ch.mjs",
       "sha256": "4a0747e694362293f5116420c9627eab09632219985d57754048b6dc46e439dd"
     },
@@ -51,7 +55,7 @@
     },
     {
       "path": "docs/03-agent-setup.md",
-      "sha256": "52c9c4871b7916f2b84917f8d05cd8acefb6dbd975976a8921ddad76905cc14c"
+      "sha256": "474ba56346064db8f28eef936ddc7ba4b9c71fe07d7dbb9b11a67dd5a91a69be"
     },
     {
       "path": "docs/04-audit.md",
@@ -83,7 +87,7 @@
     },
     {
       "path": "integrations/codex/.codex-plugin/plugin.json",
-      "sha256": "cb77d2e347392e12346f8a12a9dba08b9474450929b0000bd349e271911a8304"
+      "sha256": "a43135c25343edd2797763878dcbd20dd011d9cd0592e4ca717abd711cd323f7"
     },
     {
       "path": "integrations/codex/LICENSE",
@@ -94,12 +98,16 @@
       "sha256": "82f69d19466acec192a2fa88a7884dac6b138cde0f35706c7c9890f75409798a"
     },
     {
+      "path": "integrations/codex/assets/logo.png",
+      "sha256": "5a288905e9086fb15c1b5d1df6cb36b4080653b22366c6068139d3b1803f1df2"
+    },
+    {
       "path": "integrations/codex/package.json",
-      "sha256": "d86b6b5872979ce8ae92f51de5da85537a5165436c45615ae94055f1229668c7"
+      "sha256": "104565b2afac6bd4d1f2e38436e81dcef565833d586f96bca5ffe62da5d96206"
     },
     {
       "path": "integrations/codex/plugin.json",
-      "sha256": "f59c30ff36801721210f4aca08d9a2bb6f217df91022af6942cf3a769ed1d50f"
+      "sha256": "50646bd4518ff27a1ad29a8a059b01b265be1c793e8cbc3dedbd7caf960c2e94"
     },
     {
       "path": "integrations/codex/skills/cloudhouse-admin/SKILL.md",
@@ -112,6 +120,10 @@
     {
       "path": "integrations/codex/skills/cloudhouse-admin/references/02-agent-contract.md",
       "sha256": "1b12baf8a56812a2d31300db13932e58b7187c6ae68681964bf98dc0f9f49eeb"
+    },
+    {
+      "path": "integrations/codex/skills/cloudhouse-admin/references/07-data-analysis.md",
+      "sha256": "2fe6398e24938911ceabcf888bac7388629e11b04e2e4930124fc5238c70f451"
     },
     {
       "path": "integrations/dsh/LICENSE",
@@ -127,7 +139,7 @@
     },
     {
       "path": "integrations/dsh/package.json",
-      "sha256": "ad643e897df235b49528d29bc8bcf6eb6ca66711882ce7bb20800c165d7addda"
+      "sha256": "da552007babe340c5a4d4105fb907738018764b2abb4be4ddd23751e8870e4b5"
     },
     {
       "path": "integrations/dsh/skills/cloudhouse-admin/SKILL.md",
@@ -142,6 +154,10 @@
       "sha256": "1b12baf8a56812a2d31300db13932e58b7187c6ae68681964bf98dc0f9f49eeb"
     },
     {
+      "path": "integrations/dsh/skills/cloudhouse-admin/references/07-data-analysis.md",
+      "sha256": "2fe6398e24938911ceabcf888bac7388629e11b04e2e4930124fc5238c70f451"
+    },
+    {
       "path": "integrations/openclaw/LICENSE",
       "sha256": "cb76b5c9bec926cd9fc21e23139363e22b1b92305586ac18e75391b99ab7608b"
     },
@@ -151,7 +167,7 @@
     },
     {
       "path": "integrations/openclaw/package.json",
-      "sha256": "20b58309df1aa871b6dab5a8ef5ed5ce814057a45a06f084fd45177d199532c6"
+      "sha256": "ac807f894dc5cddb5368b4f0ddfd9cc7378bf44dc6348f2a04474ec5125c5cb7"
     },
     {
       "path": "integrations/openclaw/skills/cloudhouse-admin/SKILL.md",
@@ -166,6 +182,10 @@
       "sha256": "1b12baf8a56812a2d31300db13932e58b7187c6ae68681964bf98dc0f9f49eeb"
     },
     {
+      "path": "integrations/openclaw/skills/cloudhouse-admin/references/07-data-analysis.md",
+      "sha256": "2fe6398e24938911ceabcf888bac7388629e11b04e2e4930124fc5238c70f451"
+    },
+    {
       "path": "integrations/opencode/LICENSE",
       "sha256": "cb76b5c9bec926cd9fc21e23139363e22b1b92305586ac18e75391b99ab7608b"
     },
@@ -175,7 +195,7 @@
     },
     {
       "path": "integrations/opencode/package.json",
-      "sha256": "c0a96f9022dcb692457b990e15e40578f8ffd82638f7e3934aec06a410db7548"
+      "sha256": "f6dbb76f6cf2d565d7133a580cf79b584b212ed95912711e5f16b773e321e7d4"
     },
     {
       "path": "integrations/opencode/skills/cloudhouse-admin/SKILL.md",
@@ -190,6 +210,10 @@
       "sha256": "1b12baf8a56812a2d31300db13932e58b7187c6ae68681964bf98dc0f9f49eeb"
     },
     {
+      "path": "integrations/opencode/skills/cloudhouse-admin/references/07-data-analysis.md",
+      "sha256": "2fe6398e24938911ceabcf888bac7388629e11b04e2e4930124fc5238c70f451"
+    },
+    {
       "path": "integrations/pi/LICENSE",
       "sha256": "cb76b5c9bec926cd9fc21e23139363e22b1b92305586ac18e75391b99ab7608b"
     },
@@ -199,7 +223,7 @@
     },
     {
       "path": "integrations/pi/package.json",
-      "sha256": "14c28aa9a8a5bcc42153070817d57ad5374c03976640db71b1823baab833e218"
+      "sha256": "528ff52e4a508ad557d5547a90c6089e18a0af86778c5a7b9a465952f62a0984"
     },
     {
       "path": "integrations/pi/skills/cloudhouse-admin/SKILL.md",
@@ -214,12 +238,16 @@
       "sha256": "1b12baf8a56812a2d31300db13932e58b7187c6ae68681964bf98dc0f9f49eeb"
     },
     {
+      "path": "integrations/pi/skills/cloudhouse-admin/references/07-data-analysis.md",
+      "sha256": "2fe6398e24938911ceabcf888bac7388629e11b04e2e4930124fc5238c70f451"
+    },
+    {
       "path": "package.json",
-      "sha256": "85284e80a020fbbc7fbd13c1990d07d4ba708166175f404993129f4c9fc196c1"
+      "sha256": "a266db20bf5bca510678f955b32218f086adb3b44ae3dde664f26db2f3a54e06"
     },
     {
       "path": "scripts/build-release.mjs",
-      "sha256": "6ce3567a7bfa6a7e3932e258ed70f6486965996fcc8fe56fb0e65cae277c10fc"
+      "sha256": "50b613d5ea797cd7e8e4a993bfeff0cafe27efda845c1fa111f969cfd5551127"
     },
     {
       "path": "scripts/check-security.mjs",
@@ -227,7 +255,7 @@
     },
     {
       "path": "scripts/sync-integrations.mjs",
-      "sha256": "c36faa5dc5ecc6c8b3ea1762165c305d29781810c63f59aca75c1475e8ce494a"
+      "sha256": "17be81015cb78fee9293a3735f1851c5a6684d15ee296fce1e1c65f5e1b327af"
     },
     {
       "path": "scripts/update-docs.mjs",
@@ -244,6 +272,10 @@
     {
       "path": "skills/cloudhouse-admin/references/02-agent-contract.md",
       "sha256": "1b12baf8a56812a2d31300db13932e58b7187c6ae68681964bf98dc0f9f49eeb"
+    },
+    {
+      "path": "skills/cloudhouse-admin/references/07-data-analysis.md",
+      "sha256": "2fe6398e24938911ceabcf888bac7388629e11b04e2e4930124fc5238c70f451"
     },
     {
       "path": "src/agent-install.mjs",
@@ -411,7 +443,7 @@
     },
     {
       "path": "src/version.mjs",
-      "sha256": "02290e003dc095d629e955af4ee5f50e4334a389caf7983aa5c27c7710b65fa2"
+      "sha256": "a68dab0371366e189c6808f8c1c3c4c093a9afc527816216c3528b114c31329a"
     },
     {
       "path": "test/accounts-applies.test.mjs",
@@ -428,6 +460,10 @@
     {
       "path": "test/cli-run.test.mjs",
       "sha256": "002c3d28213b80cc6aa8d41e23407edfaa4e48147c5c13dfcb7be24df35cc2c3"
+    },
+    {
+      "path": "test/codex-brand.test.mjs",
+      "sha256": "37a35f869d1217f98b7043abda544b9101af439ee1418bcb60598e18e5270142"
     },
     {
       "path": "test/config.test.mjs",
@@ -447,7 +483,7 @@
     },
     {
       "path": "test/extended.test.mjs",
-      "sha256": "bc018b7d0af09a5dc0be8f05f49f9d37730b4fd6feff08b18733cad652d00e0b"
+      "sha256": "e1d0cb24ad3358aed97d5845c639217bed2749c6cd0c41fed285330b558bdbe6"
     },
     {
       "path": "test/flags.test.mjs",

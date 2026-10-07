@@ -1,10 +1,13 @@
 {
   "name": "cloudhouse-admin",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "CloudHouse 管理后台 CLI 原生技能",
   "skills": "./skills/",
   "interface": {
     "displayName": "CloudHouse Admin",
-    "shortDescription": "用 CLI 管理招新、面试与 AI Coding"
+    "shortDescription": "用 CLI 管理招新、面试与 AI Coding",
+    "websiteURL": "https://dayunwu.cn/",
+    "logo": "./assets/logo.png",
+    "composerIcon": "./assets/logo.png"
   }
 }
